@@ -15,12 +15,15 @@ Thanks to Cloudflare's reliable usage models, there are no associated fees, subs
 
 Check out what it looks like for end users! Live Demo: https://meraki-excap-cloudflare.pages.dev
 
-Want to try it out in your environment? Configure the following link as your WiFi Splash-Page for an access point or ssid, and your good to go! ```https://meraki-excap-cloudflare.pages.dev```
+Want to try it out in your environment? Configure the following link as your WiFi Splash-Page for an access point or ssid, and your good to go! ```https://meraki-excap-cloudflare.pages.dev```.
 
-## Easy Setup and Installation
+## Installation
+
+### Deploying to Cloudflare
 
 _Prerequisite:_ Create a Cloudflare account (www.cloudflare.com).  
 _Prerequisite:_ Create a GitHub account (https://github.com/).  
+
 1. Fork this repository to your GitHub.
 2. Rename the forked repo for your desired live page URL.
 3. Log in to Cloudflare and navigate to "Workers & Pages" on the sidebar.
@@ -28,7 +31,29 @@ _Prerequisite:_ Create a GitHub account (https://github.com/).
 5. Click "Connect to Git" and choose your forked repository.
 6. Click "Begin setup" and then "Save and Deploy."
 7. Wait about 5 minutes for the initial build.
-8. Success! Check it out at ```https://<forked-repo-name>.pages.dev```
+8. Success! Check it out at ```https://<forked-repo-name>.pages.dev```.
+
+### Configuring Click-Through on Meraki
+
+_Prerequisite:_ Have access to your orgqnizations Meraki Dashboard ([https://meraki.com/dashboard](https://account.meraki.com/secure/login/dashboard_login)).  
+
+#### Configure Meraki wireless SSID with Click-Through splash page authentication:
+
+1. Go to Meraki Dashboard.
+2. Navigate to Configure > Splash Page: Click-through.
+
+#### Add the webserver's domain address to the "Walled Garden":
+
+1. Go to Meraki Dashboard.
+2. Navigate to Configure > Access Control > SSID: yourSSID > Walled Garden.
+
+##### Note: Use the IP address if necessary or contact Meraki Support to enable Walled Garden Domain Names.
+
+#### Point the Meraki Splash page "Customer URL" to the hosted site:
+
+1. Go to Meraki Dashboard.
+2. Navigate to Configure > Splash Page.
+3. Set Custom URL to: ```https://<repo-name>.pages.dev```.
 
 ## Optional: Setup a custom domain name
 
@@ -40,7 +65,7 @@ Setting up a custom domain requires the domain to be added to Cloudflare under t
 4. Click the "Setup a custom domain" button.
 5. Enter the domain you want to configure as the custom domain name.
 6. Click the "Activate Domain" button at the bottom of the page.
-7. Success! Check out your new domain in a few minutes at ```https://<custom-domain>```
+7. Success! Check out your new domain in a few minutes at ```https://<custom-domain>```.
 
 ## Updating Your Deployment
 
@@ -55,6 +80,5 @@ Simply commit your changes to the repository used to create the page, and Cloudf
 Find us at the links below!  
 www.adamspera.dev & www.breyr.dev
 
-
 ## LICENSE
-Apache 2.0 (see [LICENSE](./LICENSE) and [NOTICE](./NOTICE)).
+Apache 2.0 (see [LICENSE](./LICENSE)).
