@@ -21,8 +21,8 @@ Want to try it out in your environment? Configure the following link as your WiF
 
 ### Deploying to Cloudflare
 
-_Prerequisite:_ Create a Cloudflare account (www.cloudflare.com).  
-_Prerequisite:_ Create a GitHub account (https://github.com/).  
+_Prerequisite:_ Create a Cloudflare account www.cloudflare.com.  
+_Prerequisite:_ Create a GitHub account www.github.com.  
 
 1. Fork this repository to your GitHub.
 2. Rename the forked repo for your desired live page URL.
