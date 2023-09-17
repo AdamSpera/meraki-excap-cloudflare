@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Splash Page</title>
+
+    <!-- Add Bootstrap CSS Link -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="container mt-5">
+        <div class="row justify-content-center m-0 m-lg-5">
+          <div class="col-md-6 card p-5">
+            <h1 class="text-center fs-1">Guest Wi-Fi</h1>
+            <p class="mb-5 text-center fs-4">
+              Please enter your details to access the Wi-Fi
+            </p>
+            <div>
+              <div class="mb-4">
+                <label for="name" class="form-label fs-4">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label for="email" class="form-label fs-4">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <button class="btn btn-dark w-100 mt-3" id="continue-btn">
+                Continue
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Bootstrap JavaScript and jQuery (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
