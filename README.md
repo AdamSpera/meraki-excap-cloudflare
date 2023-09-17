@@ -15,7 +15,9 @@ Thanks to Cloudflare's reliable usage models, there are no associated fees, subs
 
 Check out what it looks like for end users! Live Demo: https://meraki-excap-cloudflare.pages.dev
 
-Want to try it out in your environment? Configure the following link as your WiFi Splash-Page for an access point or ssid, and your good to go! ```https://meraki-excap-cloudflare.pages.dev```.
+Want to try it out in your environment? Configure the following link as your WiFi Splash-Page for an access point or ssid, and you are good to go! ```https://meraki-excap-cloudflare.pages.dev```.
+
+![Screenshot of Live Demo](screenshot.png)
 
 ## Installation
 
@@ -72,10 +74,7 @@ Setting up a custom domain requires the domain to be added to Cloudflare under t
 Updating your deployment is as easy as it comes!  
 Simply commit your changes to the repository used to create the page, and Cloudflare will automatically build and deploy the next version for you! This can be altered, though, to only automatically deploy to a preview branch rather than production.
 
-## Screenshot
-![Screenshot of Live Demo](screenshot.png)
-
-### Created By
+## Created By
 *Adam Spera & Brey Rivera*  
 Find us at the links below!  
 www.adamspera.dev & www.breyr.dev
