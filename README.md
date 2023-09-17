@@ -56,8 +56,7 @@ Simply commit your changes to the repository used to create the page, and Cloudf
 ### Created By
 *Adam Spera & Brey Rivera*  
 Find us at the links below!  
-www.adamspera.dev
-www.breyr.dev
+www.adamspera.dev & www.breyr.dev
 
 
 ## LICENSE
