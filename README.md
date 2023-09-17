@@ -13,7 +13,9 @@ Thanks to Cloudflare's reliable usage models, there are no associated fees, subs
 
 ### Example and Live Demo
 
-Test it out in real-time in your environment! Configure the following link as your WiFi Splash-Page for a non-production access point or ssid, and try it out! ```https://meraki-excap-cloudflare.pages.dev```
+Check out what it looks like for end users! Live Demo: https://meraki-excap-cloudflare.pages.dev
+
+Want to try it out in your environment? Configure the following link as your WiFi Splash-Page for an access point or ssid, and your good to go! ```https://meraki-excap-cloudflare.pages.dev```
 
 ## Easy Setup and Installation
 
