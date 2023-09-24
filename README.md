@@ -39,27 +39,25 @@ _Prerequisite:_ Create a GitHub account www.github.com.
 
 _Prerequisite:_ Have access to your orgqnizations Meraki Dashboard ([https://meraki.com/dashboard](https://account.meraki.com/secure/login/dashboard_login)).  
 
-#### Configure Meraki wireless SSID with Click-Through splash page authentication:
-
 1. Go to Meraki Dashboard.
-2. Navigate to Configure > Splash Page: Click-through.
-
-#### Add the webserver's domain address to the "Walled Garden":
-
-1. Go to Meraki Dashboard.
-2. Navigate to Configure > Access Control > SSID: yourSSID > Walled Garden.
-
-##### Note: Use the IP address if necessary or contact Meraki Support to enable Walled Garden Domain Names.
-
-#### Point the Meraki Splash page "Customer URL" to the hosted site:
-
-1. Go to Meraki Dashboard.
-2. Navigate to Configure > Splash Page.
-3. Set Custom URL to: ```https://<repo-name>.pages.dev```.
+2. Navigate to "Wireless" > "Configure" > "Splash Page"
+3. Under "Custom splash URL" enter the splash page url.
+4. Navigate to "Wireless" > "Configure" > "Access Control"
+5. Under "Security" select "Open (no encryption)"
+6. Under "Splash page" select "Click-through"
+7. Under "Advanced splash settings" select:
+   - Captive portal strength: Block all access until sign-on is complete
+   - Walled garden: Enabled
+8. Under "Walled garden ranges" enter:
+   - *.wifi.direct
+   - *.google-analytics.com
+   - forked-repo-name.pages.dev
 
 ## Optional: Setup a custom domain name
 
 Setting up a custom domain requires the domain to be added to Cloudflare under the "Websites" tab, as this process will add a new CNAME attribute to the domain's DNS configurations.
+
+Make sure to update the Walled Garden ranges if previosuly configured! Both the cloudflare pages url and the custom domain name will need to be added!
 
 1. Select the "Workers & Pages" tab on the sidebar.
 2. Select the pages project you want to set up a custom domain for.
