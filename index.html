@@ -2,61 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wi-Fi Splash Page</title>
-
-    <!-- Add Bootstrap CSS Link -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Splash Page</title>
+    <link href="styles.css" rel="stylesheet" />
   </head>
+
   <body>
-    <div class="main-wrapper">
-      <div class="container mt-5">
-        <div class="row justify-content-center m-0 m-lg-5">
-          <div class="col-md-6 card p-5">
-            <h1 class="text-center fs-1">Guest Wi-Fi</h1>
-            <p class="mb-5 text-center fs-4">
-              Please enter your details to access the Wi-Fi
-            </p>
-            <div>
-              <div class="mb-4">
-                <label for="name" class="form-label fs-4">Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  name="name"
-                  placeholder="Enter your name"
-                  required
-                />
-              </div>
-              <div class="mb-4">
-                <label for="email" class="form-label fs-4">Email</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="email"
-                  name="email"
-                  placeholder="Enter your email"
-                  required
-                />
-              </div>
-              <button class="btn btn-dark w-100 mt-3" id="continue-btn">
-                Continue
-              </button>
-            </div>
-          </div>
+    <div class="card">
+      
+      <div class="card-body">
+
+        <div class="card-image-zone">
+          <img src="arcadia-university.png" alt="Organization Logo" />
         </div>
+
+        <div class="card-header-zone">
+          <h1>Arcadia University</h1>
+          <h3>Guest Wi-Fi Network</h3>
+        </div>
+
+        <div class="card-input-zone">
+          <input
+            type="email"
+            id="email"
+            placeholder="Your Email Address"
+            required
+          />
+          <div style="margin: 10px"></div>
+          <label for="checkbox">I agree to the Terms and Conditions: </label>
+          <input type="checkbox" id="consent" name="checkbox" required />
+        </div>
+
+        <div class="card-message-zone" style="display: none"></div>
+        
+        <div class="card-button-zone">
+          <button id="continue-btn">Continue</button>
+        </div>
+
       </div>
+
+      <div id="bottom-bar">
+        <a href="#">Your Info</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+
     </div>
-    <!-- Add Meraki Click-Through API  -->
     <script src="meraki.js"></script>
-    <!-- Add Bootstrap JavaScript and jQuery (Optional) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>

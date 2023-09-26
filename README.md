@@ -52,6 +52,7 @@ _Prerequisite:_ Have access to your orgqnizations Meraki Dashboard ([https://mer
    - *.wifi.direct
    - *.google-analytics.com
    - forked-repo-name.pages.dev
+   - fonts.googleapis.com
 
 ## Optional: Setup a custom domain name
 

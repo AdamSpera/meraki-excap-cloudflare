@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  
+  /* background-image: url('grid-tile.png');
+  background-repeat: repeat;
+  background-size: 35px; */
+
+  background-image: url('background.jpg');
+  background-position: center 64%;
+  background-attachment: Fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  letter-spacing: .7px;
+  text-transform: uppercase;
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 25px;
+  line-height: 120%;
+  font-weight: 500;
+  color: #171717;
+  user-select: none;
+}
+
+h3 {
+  letter-spacing: .8px;
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 15px;
+  line-height: 120%;
+  font-weight: 400;
+  color: #171717;
+}
+
+.card {
+  background-color: rgb(248, 248, 248);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  border: none;
+  width: 100%;
+  max-width: 400px;
+}
+
+.card-body {
+  text-align: center;
+  padding: 20px;
+}
+
+.card a {
+  color: grey;
+  text-decoration: none;
+}
+
+.card img {
+  width: 80%;
+  max-width: 300px;
+}
+
+.card input[type="email"] {
+  border-radius: 0px;
+  border: 1px solid rgb(204, 204, 204);
+  width: 80%;
+  padding: 10px;
+}
+
+.card input[type="email"]:focus {
+  outline: none;
+}
+
+.card input[type="text"] {
+  border-radius: 0px;
+  border: 1px solid rgb(204, 204, 204);
+  width: 80%;
+  padding: 10px;
+}
+
+.card input[type="text"]:focus {
+  outline: none;
+}
+
+.card label {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+}
+
+.card button {
+  width: 90%;
+  padding: .375rem;
+  font-family: 'Roboto Mono', sans-serif;
+  background-color: #a4001e;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.card button:hover {
+  color: #fff;
+  background-color: #171717a3;
+  border-color: #fff;
+}
+
+.card-image-zone {
+  margin: 30px;
+}
+
+.card-header-zone {
+  margin-top: 10px;
+}
+
+.card-input-zone {
+  margin-top: 30px;
+}
+
+.card-message-zone {
+  font-family: 'Roboto Mono', sans-serif;
+  margin-top: 10px;
+}
+
+.card-button-zone {
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+}
+
+#bottom-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  width: 100%;
+  margin-bottom: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 2px;
+  font-size: 13px;
+  color: #222222;
+  text-align: center;
+}
+#bottom-bar :nth-child(1) {
+  flex-grow: 1;
+  width: 20%;
+  border-right: 1px solid #bcbcbc;
+}
+#bottom-bar :nth-child(2) {
+  flex-grow: 1;
+  width: 30%;
+}
+#bottom-bar :nth-child(3) {
+  flex-grow: 1;
+  width: 20%;
+  border-left: 1px solid #bcbcbc;
+}
