@@ -3,6 +3,9 @@
 *Cloudflare: WiFi Captive Portal*  
 An Open-Source Meraki Captive Portal using Cloudflare Pages.
 
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/AdamSpera/meraki-excap-cloudflare)
+[![Run in Cisco Cloud IDE](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-runable-icon.svg)](https://developer.cisco.com/codeexchange/devenv/AdamSpera/meraki-excap-cloudflare/)
+
 ## Overview
 
 The Meraki Captive Portal with Cloudflare is an open-source and freely accessible solution for creating customized Captive Portals tailored to Cisco Meraki wireless networks.
