@@ -79,7 +79,7 @@ Simply commit your changes to the repository used to create the page, and Cloudf
 ## Created By
 *Adam Spera & Brey Rivera*  
 Find us at the links below!  
-[www.adamspera.dev](https://adamspera.dev/) & [www.breyr.dev](https://breyr.dev/)
+[https://adamspera.dev](https://adamspera.dev/) & [https://breyr.dev](https://breyr.dev/)
 
 ## LICENSE
 Apache 2.0 (see [LICENSE](./LICENSE)).
